@@ -76,6 +76,9 @@ Developed by: Khaled Hany
 
 https://github.com/khaledhany10
 
+🔗 LinkedIn Profile
+
+https://www.linkedin.com/in/khaled-hany-32616427b/
 
 🪄 Notes
 
