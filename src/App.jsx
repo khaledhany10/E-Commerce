@@ -34,10 +34,11 @@ const router = createBrowserRouter([
       { path: 'ResetPassword', element: <ResetPassword /> },
       { path: 'Catogery', element: <Catogery /> },
       { path: 'allorders', element: <Home /> },
+      { path: 'https://e-commerce-25sm-m3tfomeh9-khaledhany10s-projects.vercel.app/', element: <Login /> },
       { path: 'ProductDetails/:id', element: <ProductDetails /> },
       { path: 'Cart/:id', element: <Cart /> },
       { path: '*', element: <NotFound /> },
-      { path: '', element: <Home /> }
+      { path: '', element: <Login /> }
     ]
   }
 ])
