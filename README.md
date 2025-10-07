@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+# 🛍️ E-Commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced **online shopping web application** built using **React** and **Vite**, offering a seamless shopping experience.  
+Users can browse products, add them to cart or wishlist, and complete orders with secure **online or cash payments**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Project Overview
+The **E-Commerce App** provides a modern, fast, and user-friendly interface for online shopping.  
+It integrates with a live API to handle user authentication, products, categories, cart management, and checkout sessions.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙️ Main Features
 
-- Configure the top-level `parserOptions` property like this:
+✅ **User Authentication** — Register, Login, Reset Password, and Verify Code  
+✅ **Product Management** — Browse all products and categories dynamically  
+✅ **Add to Cart & Wishlist** — Easily manage favorite and carted items  
+✅ **Checkout System** — Choose between **Cash** or **Online** payments  
+✅ **Dynamic Data Fetching** — Real-time updates from the external API  
+✅ **Modern UI** — Built with **Tailwind CSS** and **React Toastify** for better UX  
+✅ **Form Validation** — Using **Formik** + **Yup**  
+✅ **State Management** — Powered by **Redux Toolkit**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🧰 Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+| Technology | Purpose |
+|-------------|----------|
+| ⚛️ **React + Vite** | Fast and modern frontend framework |
+| 🎨 **Tailwind CSS** | Clean and responsive UI styling |
+| 🧠 **Redux Toolkit** | State management |
+| 🔄 **Axios** | HTTP requests |
+| 🧭 **React Router DOM** | Routing and navigation |
+| ✅ **Formik + Yup** | Form handling and validation |
+| 🔔 **React Toastify** | Notification system |
+| 💳 **External API** | Product & Order management (`https://ecommerce.routemisr.com/api/v1/`) |
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+├── pages/
+│ ├── Login.jsx
+│ ├── Register.jsx
+│ ├── Home.jsx
+│ ├── Products.jsx
+│ ├── Cart.jsx
+│ ├── Category.jsx
+│ ├── Payment.jsx
+│ ├── VerifyCode.jsx
+│ └── ResetPassword.jsx
+├── Redux/
+│ ├── authSlice.js
+│ ├── cartSlice.js
+│ └── reduxStore.js
+└── App.jsx
+
+Install dependencies
+
+npm install
+
+🌐 Live Demo
+
+🔗 Live Preview: E-Commerce App on Vercel
+
+👨‍💻 Developer
+
+Developed by: Khaled Hany
+📧 hanykhaled153@gmail.com
+
+💼 GitHub Profile
+
+https://github.com/khaledhany10
+
+
+🪄 Notes
+
+The app connects to the RouteMisr E-Commerce API
+
+Make sure your internet connection is active when testing payment and authentication features
+
+Fully responsive design across all screen sizes
